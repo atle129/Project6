@@ -17,7 +17,7 @@ private:
 public:
 	Karel(void);
 
-	Karel(int a, int s, int b);
+	Karel(int ave, int street, int beeber, int icon);
 
 	int getAve();
 	int getStreet();

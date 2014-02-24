@@ -118,7 +118,7 @@ namespace Project6 {
 
 		Karel^ k1;
 		array<Cell^,2>^ world;
-		char direction;
+		
 
 		Graphics^ g;
 		Brush^ grayBrush;
@@ -147,27 +147,30 @@ namespace Project6 {
 				
 
 				 
-	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) {
-				 //int x;
-				 //int y;
-
-				 //int karelStreet = 8;
-				 //int karelAve = 8;
-				 //int karelBeeper = 0;
-
-				 //k1 = gcnew Karel(karelAve, karelStreet);
-
-
+	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) 
+			 {
 				 drawMaze();
 
-				 //k1->setStreet(karelStreet);
-				 //k1->setAve(karelAve);
 
-				 //x = karelAve * CELLSIZE;
-				 //y = karelStreet * CELLSIZE;
 
-				 //Rectangle karelRect = Rectangle(x,y,CELLSIZE,CELLSIZE);
-				 //g->DrawIcon(k1->getIcon(),karelRect);
+	             int x;
+				 int y;
+
+				 int karelStreet = 8;
+				 int karelAve = 8;
+				 int karelBeeper = 0;
+				 int karelIcon = 1;
+
+
+				 k1 =  gcnew Karel(karelAve, karelStreet, karelBeeper,karelIcon);
+				 k1->setStreet(karelStreet);
+				 k1->setAve(karelAve);
+
+				 x = karelAve * CELLSIZE;
+				 y = karelStreet * CELLSIZE;
+
+				 Rectangle karelRect = Rectangle(x,y,CELLSIZE,CELLSIZE);
+				 g->DrawIcon(k1->getIcon(),karelRect);
 
 				 
 			 }
