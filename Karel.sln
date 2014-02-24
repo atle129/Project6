@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Karel", "Project6\Project6.vcxproj", "{AB4D45FB-E078-49FC-B76B-0C109A3A8C8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83DB4DBD-F8D9-4272-BD98-BF7E917E3BFF}"
+	ProjectSection(SolutionItems) = preProject
+		karelDown.ico = karelDown.ico
+		karelLeft.ico = karelLeft.ico
+		karelRight.ico = karelRight.ico
+		karelUp.ico = karelUp.ico
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4D45FB-E078-49FC-B76B-0C109A3A8C8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB4D45FB-E078-49FC-B76B-0C109A3A8C8B}.Debug|Win32.Build.0 = Debug|Win32
+		{AB4D45FB-E078-49FC-B76B-0C109A3A8C8B}.Release|Win32.ActiveCfg = Release|Win32
+		{AB4D45FB-E078-49FC-B76B-0C109A3A8C8B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
