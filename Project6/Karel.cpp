@@ -4,12 +4,12 @@
 Karel::Karel(void)
 {
 }
-Karel::Karel(int a, int s, int b)
+Karel::Karel(int a, int s, int b, int i)
 {
 	ave = a;
 	street = s;
 	beeper = b;
-	icon = 0;
+	icon = i;
 }
 
 
@@ -30,6 +30,9 @@ int Karel::getBeeper()
 
 System::Drawing::Icon^ Karel::getIcon()
 {
+
+if (icon >= 0 || icon <= 3)
+{
 	if (icon == 0)
 	{
 		return karelRight;
@@ -47,6 +50,11 @@ System::Drawing::Icon^ Karel::getIcon()
 		return karelDown;
 	}
 }
+	
+return karelRight;
+
+}
+
 
 System::Drawing::Icon^ Karel::placeBeeper()
 {
